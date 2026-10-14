@@ -1,0 +1,770 @@
+body {
+    margin: 0;
+}
+/* Aseguramos que el header mantenga su altura original */
+header {
+    background-color: #5983bd;
+    border-bottom: 4px solid #FFB703;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    overflow: visible; /* Clave para que el logo grande no deforme el header */
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+/* Modificamos el tamaño de la imagen del logo al doble (100px) */
+.logo-box img {
+    height: 100px; /* Antes estaba en 50px */
+    width: 100px;  /* Antes estaba en 50px */
+    border-radius: 50%;
+    background-color: #70E000;
+    padding: 2px;
+    position: relative; /* Permite que sobresalga sin romper el header */
+    z-index: 10;        /* Se asegura de que quede por encima del fondo */
+}
+
+.logo-box span {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+.logo-box span span {
+    color: white;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Redes sociales a la derecha */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 30px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #01303a;
+}
+
+.texto-borde {
+  color: white;                 
+  -webkit-text-stroke: 2px rgb(48, 47, 82); 
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #20ba5a;
+}
+
+/* Estilos del Banner Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img-banner/img-banner.jpg'); /* Reemplazá con tu imagen de fondo o color */
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-badge {
+    background-color: #f8cb4e;
+    color: #1D3557;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.8;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #f1f1f1;
+    max-width: 600px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-whatsapp-hero {
+    background-color: #25D366;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-whatsapp-hero:hover {
+    transform: scale(1.05);
+    background-color: #20ba5a;
+}
+
+/* Estilos de la Sección de Promociones */
+.promos-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1D3557;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;          /* más grande (antes se veía ~1rem) */
+    font-weight: 500;
+    color: #d62828;             /* el color que quieras */
+    margin-top: 10px;
+    margin-bottom: 50px;        /* separación con las tarjetas */
+}
+
+.promos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Modificamos .promo-card y .promo-info para que fuercen la misma altura */
+.promo-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-top: 4px solid #70E000;
+    display: flex;             /* Nuevo: permite controlar los elementos internos */
+    flex-direction: column;    /* Nuevo: organiza todo en columna */
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+.promo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.promo-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;              /* Nuevo: hace que esta caja ocupe todo el alto sobrante */
+    justify-content: space-between; /* Nuevo: distribuye el espacio y alinea los botones abajo */
+    gap: 12px;
+}
+
+.promo-info h3 {
+    font-size: 30px;
+    color: #f0a80c;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.promo-info p {
+    font-size: 20px;
+    color: #4242cf;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Fuente para todo el texto normal */
+}
+
+.promo-price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1d232b;
+}
+
+.btn-promo {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-promo:hover {
+    background-color: #20ba5a;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+    --navy: #1b2a49;
+    --navy-light: #e8ecf5;
+    --text: #1f2937;
+    --text-soft: #4b5563;
+    --text-muted: #9ca3af;
+    --bg: #f3f4f6;
+    --white: #ffffff;
+    --line: #eceef2;
+}
+
+/* ===== SECCIÓN ===== */
+.menu-section {
+    background: var(--bg);
+    padding: 80px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.menu-section .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.menu-badge {
+    display: inline-block;
+    background: var(--navy-light);
+    color: var(--navy);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+}
+
+.section-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-soft);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.section-subtitle.promo-subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #534c8a;
+    max-width: 700px;
+    margin: 12px auto 50px;   /* 50px = separación con las tarjetas */
+}
+
+/* ===== PESTAÑAS ===== */
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0 40px;
+}
+
+.tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 26px;
+    border: none;
+    background: var(--white);
+    color: var(--navy);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.tab-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.tab-btn.active {
+    background: var(--navy);
+    color: var(--white);
+    box-shadow: 0 6px 16px rgba(27, 42, 73, 0.35);
+}
+
+/* ===== CATEGORÍAS (lo que hace que se desplieguen) ===== */
+.menu-content-category {
+    display: none;
+}
+
+.menu-content-category.active {
+    display: block;
+    animation: fadeInMenu 0.4s ease;
+}
+
+@keyframes fadeInMenu {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== GRILLA ===== */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 6px 4px 20px;
+    text-align: left;
+}
+
+
+/* ===== TARJETAS ===== */
+.menu-card {
+    --accent: #e63946;
+    --accent-soft: #fde2e4;
+    --accent-text: #d6293e;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--white);
+    border-radius: 18px;
+    border-left: 7px solid var(--accent);
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
+}
+
+/* Ciclo de colores: rojo, amarillo, naranja, verde azulado, azul oscuro */
+.menu-card:nth-child(5n+2) {
+    --accent: #ffb703;
+    --accent-soft: #fff1c2;
+    --accent-text: #a35a00;
+}
+
+.menu-card:nth-child(5n+3) {
+    --accent: #fb8500;
+    --accent-soft: #ffe9cc;
+    --accent-text: #d97706;
+}
+
+.menu-card:nth-child(5n+4) {
+    --accent: #2a9d8f;
+    --accent-soft: #d1f5ee;
+    --accent-text: #1f7a6f;
+}
+
+.menu-card:nth-child(5n+5) {
+    --accent: #1b2a49;
+    --accent-soft: #dbeafe;
+    --accent-text: #1b2a49;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card-top h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.card-desc {
+    font-size: 0.95rem;
+    color: var(--text-soft);
+    line-height: 1.55;
+    margin-bottom: 18px;
+    flex-grow: 1;
+}
+
+/* ===== ETIQUETAS ===== */
+.badge {
+    flex-shrink: 0;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    white-space: nowrap;
+    background: var(--accent-soft);
+    color: var(--accent-text);
+}
+
+
+/* ===== PIE DE TARJETA ===== */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+}
+
+.card-note {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.btn-card-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--accent-text);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 700;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.btn-card-whatsapp:hover {
+    transform: translateX(3px);
+    opacity: 0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .menu-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .tab-btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== SECCIÓN CÓMO ENCONTRARNOS ===== */
+.contacto-section {
+    background: #ffc72c;
+    padding: 80px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.contacto-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contacto-badge {
+    display: inline-block;
+    background: #1b2a49;
+    color: #ffc72c;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+}
+
+.contacto-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #1b2a49;
+    margin: 0 0 12px;
+}
+
+.contacto-intro {
+    font-size: 1.1rem;
+    color: #3b3b3b;
+    max-width: 650px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+/* ===== GRILLA ===== */
+.contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 6px 4px 20px;
+}
+
+/* ===== TARJETAS ===== */
+.contacto-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 32px 22px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.2);
+}
+
+.contacto-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1b2a49;
+    color: #ffc72c;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.contacto-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1b2a49;
+    margin: 0 0 12px;
+}
+
+.contacto-card p {
+    font-size: 0.97rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0 0 6px;
+}
+
+.contacto-card p i {
+    color: #1b2a49;
+    margin-right: 4px;
+}
+
+.contacto-sub {
+    font-size: 0.88rem !important;
+    color: #9ca3af !important;
+}
+
+.contacto-destacado {
+    font-size: 1.15rem !important;
+    font-weight: 700;
+    color: #1b2a49 !important;
+}
+
+/* ===== LINKS DENTRO DE LAS TARJETAS ===== */
+.contacto-card p a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.contacto-card p a:hover {
+    color: #25d366;
+}
+
+.contacto-card p a:hover i {
+    color: #25d366;
+}
+
+/* ===== BOTÓN WHATSAPP ===== */
+.contacto-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    background: #1b2a49;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 16px 36px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(27, 42, 73, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.contacto-btn:hover {
+    background: #25d366;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(37, 211, 102, 0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+    .contacto-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto-section {
+        padding: 60px 0;
+    }
+
+    .contacto-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== AJUSTES PARA CELULARES Y TABLETS ===== */
+@media (max-width: 900px) {
+    .menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .nav-container { padding: 8px 12px; gap: 8px; }
+    .logo-box { gap: 8px; }
+    .logo-box img { height: 56px; width: 56px; }
+    .logo-box span,
+    .logo-box span span { font-size: 22px; }
+    .texto-borde { -webkit-text-stroke: 1px rgb(48, 47, 82); }
+    .social-icons a { font-size: 22px; margin-left: 10px; }
+
+    .hero { min-height: 60vh; padding: 40px 16px; }
+    .hero h1 { font-size: 26px; line-height: 1.3; }
+    .hero p { font-size: 16px; line-height: 1.6; }
+    .hero-badge { font-size: 12px; }
+    .btn-whatsapp-hero { font-size: 17px; padding: 12px 24px; }
+
+    .promos-section { padding: 40px 16px; }
+    .promo-card { width: 100%; max-width: 350px; }
+    .section-title { font-size: 1.8rem; }
+    .section-subtitle.promo-subtitle { font-size: 1.1rem; }
+    .promo-info h3 { font-size: 24px; }
+    .promo-info p { font-size: 17px; }
+    .btn-promo { font-size: 17px; }
+}
+
+@media (max-width: 600px) {
+    .menu-grid { grid-template-columns: 1fr; }
+    .whatsapp-float { width: 54px; height: 54px; font-size: 28px; bottom: 16px; right: 16px; }
+    .contacto-btn { font-size: 1rem; padding: 14px 28px; }
+}
+
+@media (max-width: 380px) {
+    .logo-box span,
+    .logo-box span span { font-size: 18px; }
+    .social-icons a { font-size: 20px; margin-left: 8px; }
+}
+
+.menu-section .container,
+.contacto-container {
+    box-sizing: border-box;
+}
+
+

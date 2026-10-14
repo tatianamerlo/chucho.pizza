@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chucho Pizza</title>
+    <link rel="icon" href="img-pestana/img-pestana.png">
+    <!-- FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+       <div class="nav-container">
+        <!-- Logo pegado a la izquierda -->
+         <a href="#" class="logo-box">
+            <img src="img-logo/chucho_pizza_blanco.png" alt="Chucho Pizza logo" onerror="this.src='https://placehold.co/100x100/70E000/1D3557?text=CH'">
+            <span class="texto-borde">Chucho <span>Pizza</span></span>
+         </a>
+
+         <!-- Redes Sociales a la derecha (Corregido a nav-right) -->
+          <div class="nav-right">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/chucho___pizza?utm_source=ig_web_button_share_sheet&psln=ZDNlZDc0MzIxNw==" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chucho.piza" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/5492478521979" target="_blank" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+       </div>
+    </header>
+    <!-- BANNER PRINCIPAL (HERO) -->
+     <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Avenida de Mayo 497 · Delivery & Retiro</span>
+            <h1>Las mejores pizzas, empanadas y tartas de la zona</h1>
+            <p>Disfrutá el auténtico sabor tradicional en tu casa. Ingredientes frescos, masa perfecta y la velocidad que necesitás.</p>
+
+            <div class="hero-buttons">
+                <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20hacer%20un%20pedido." target="_blank" class="btn-whatsapp-hero">
+                    <i class="fa-brands fa-whatsapp"></i> ¡Pedí por Whatsapp!
+                </a>
+            </div>
+        </div>
+     </section>
+     <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20hacer%20un%20pedido." target="_blank" class="whatsapp-float" title="¡Pedí por WhatsApp!">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- SECCIÓN DE PROMOCIONES -->
+     <section class="promos-section" id="promos">
+        <div class="container">
+            <h2 class="section-title">Promociones Destacadas</h2>
+            <p class="section-subtitle promo-subtitle">¡Aprovechá nuestros combos especiales para compartir!</p>
+
+        <div class="promos-grid">
+            <!-- Promo 1 -->
+             <div class="promo-card">
+                <img src="img-promos/promo-1.jpg" alt="Promo 3 Muzzas" onerror="this.src='https://placehold.co/400x250/FFB703/1D3557?text=3+Muzzas'">
+                <div class="promo-info">
+                    <h3>Promo 1</h3>
+                    <p>3 Pizzas Muzzarella.</p>
+                    <span class="promo-price">$29.000</span>
+                    <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20la%20Promo%201%20(3%20Muzzas%20por%20$29.000)." target="_blank" rel="noopener noreferrer" class="btn-promo">
+                    <i class="fa-brands fa-whatsapp"></i>Pedir Promo
+                    </a>
+                </div>
+             </div>
+
+             <!-- Promo 2 -->
+              <div class="promo-card">
+                <img src="img-promos/promo-2.jpg" alt="Promo Muzza + Empanadas" onerror="this.src='https://placehold.co/400x250/1D3557/FFB703?text=Muzza+%2B+Empanadas'">
+                <div class="promo-info">
+                    <h3>Promo 2</h3>
+                    <p>1 Muzzarella + 1 Docena de Empanadas (a elección).</p>
+                    <span class="promo-price">$26.000</span>
+                    <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20la%20Promo%202%20(Muzzarella%20y%20Docena%20por%20$26.000)." target="_blank" rel="noopener noreferrer" class="btn-promo">
+                    <i class="fa-brands fa-whatsapp"></i>Pedir Promo
+                    </a>
+                </div>
+              </div>
+
+              <!-- Promo 3 -->
+               <div class="promo-card">
+                <img src="img-promos/promo-3.jpg" alt="Promo Especial + Empanadas" onerror="this.src='https://placehold.co/400x250/E63946/FFFFFF?text=Especial+%2B+Empanadas'">
+                <div class="promo-info">
+                    <h3>Promo 3</h3>
+                    <p>1 Especial + 1 Docena de Empanadas (a elección).</p>
+                    <span class="promo-price">$30.000</span>
+                    <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20la%20Promo%203%20(Especial%20y%20Docena%20por%20$30.000)." target="_blank" rel="noopener noreferrer" class="btn-promo">
+                        <i class="fa-brands fa-whatsapp"></i>Pedir Promo
+                    </a>
+                </div>
+              </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- SECCIÓN DE MENÚ TIPO PESTAÑAS -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <span class="menu-badge">CARTA COMPLETA</span>
+            <h2 class="section-title">Nuestro Menú</h2>
+            <p class="section-subtitle">Seleccioná una categoría para explorar nuestra variedad de pizzas, empanadas y tartas.</p>
+
+            <div class="menu-tabs">
+    <!-- Botón Pizzas -->
+    <button class="tab-btn active" onclick="switchCategory('pizzas', event)">
+        <i class="fa-solid fa-pizza-slice"></i> Pizzas
+    </button>
+    
+    <!-- Botón Empanadas -->
+    <button class="tab-btn" onclick="switchCategory('empanadas', event)">
+        <i class="fa-solid fa-utensils"></i> Empanadas
+    </button>
+    
+    <!-- Botón Tartas -->
+    <button class="tab-btn" onclick="switchCategory('tartas', event)">
+        <i class="fa-solid fa-plate-wheat"></i> Tartas
+    </button>
+</div>
+
+            <!-- Categoría Pizzas (Visible al iniciar) -->
+<div class="menu-content-category active" id="pizzas">
+    <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Muzzarella</h4>
+                            <span class="badge clasica">CLÁSICA</span>
+                        </div>
+                        <p class="card-desc">Salsa de tomate, muzzarella de primera y orégano.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Excelente calidad</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Muzzarella." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Especial</h4>
+                            <span class="badge popular">POPULAR</span>
+                        </div>
+                        <p class="card-desc">Muzzarella, jamón, huevo picado y morrones.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Favorita</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Especial." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Jamón y Morrón</h4>
+                            <span class="badge tradicional">TRADICIONAL</span>
+                        </div>
+                        <p class="card-desc">Clásica con jamón y morrones frescos.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Tradicional</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Jam%C3%B3n%20y%20Morr%C3%B3n." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Cebolla</h4>
+                            <span class="badge clasica">CLÁSICA</span>
+                        </div>
+                        <p class="card-desc">Muzzarella con cebolla salteada dorada.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Sabor único</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Cebolla." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Roquefort</h4>
+                            <span class="badge popular">INTENSO</span>
+                        </div>
+                        <p class="card-desc">Queso azul intenso fundido sobre muzzarella.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Para amantes del queso</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Roquefort." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Calabresa</h4>
+                            <span class="badge popular">POPULAR</span>
+                        </div>
+                        <p class="card-desc">Calabresa en rodajas y muzzarella.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Bien picantita</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Calabresa." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Napolitana</h4>
+                            <span class="badge clasica">CLÁSICA</span>
+                        </div>
+                        <p class="card-desc">Rodajas de tomate fresco, ajo picado y provenzal.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Fresco y rico</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Napolitana." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Cochina</h4>
+                            <span class="badge especial">BOMBA</span>
+                        </div>
+                        <p class="card-desc">Muzzarella, papas fritas, huevos a la plancha y provenzal.</p>
+                        <div class="card-footer">
+                            <span class="card-note">¡Imperdible!</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Cochina." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Panceta</h4>
+                            <span class="badge especial">ESPECIAL</span>
+                        </div>
+                        <p class="card-desc">Panceta ahumada crujiente sobre base de muzzarella, con papas fritas y cheddar.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Full sabor</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Panceta." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Muzza con Huevo</h4>
+                            <span class="badge clasica">CLÁSICA</span>
+                        </div>
+                        <p class="card-desc">Huevo duro picado coronando la clásica muzzarella.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Tradicional</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Muzza%20con%20Huevo." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Ananá</h4>
+                            <span class="badge tradicional">AGRIDULCE</span>
+                        </div>
+                        <p class="card-desc">La combinación perfecta agridulce con ananá en almíbar y tiras de jamón.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Diferente</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Anan%C3%A1." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Palmito</h4>
+                            <span class="badge popular">POPULAR</span>
+                        </div>
+                        <p class="card-desc">Muzzarella, palmitos, huevo picado, morrón y salsa golf.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Abundante</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Palmito." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Anchoas</h4>
+                            <span class="badge tradicional">CLÁSICA</span>
+                        </div>
+                        <p class="card-desc">Anchoas y morrón.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Intensa</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Anchoas." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Rúcula</h4>
+                            <span class="badge popular">GOURMET</span>
+                        </div>
+                        <p class="card-desc">Rúcula fresca y jamón crudo.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Fresca</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20R%C3%BAcula." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Choclo</h4>
+                            <span class="badge clasica">SUAVE</span>
+                        </div>
+                        <p class="card-desc">Muzzarella y choclos.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Suave y rica</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Pizza%20Choclo." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría Empanadas (Oculta al iniciar) -->
+<div class="menu-content-category" id="empanadas">
+    <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Carne</h4>
+                            <span class="badge popular">POPULAR</span>
+                        </div>
+                        <p class="card-desc">Tradicional jugosa.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Eléctrica / Cortada</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20empanadas%20de%20Carne." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Jamón y Queso</h4>
+                            <span class="badge clasica">CLÁSICA</span>
+                        </div>
+                        <p class="card-desc">Clásica y abundante.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Un clásico</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20empanadas%20de%20Jam%C3%B3n%20y%20Queso." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Cebolla</h4>
+                            <span class="badge clasica">SUAVE</span>
+                        </div>
+                        <p class="card-desc">Relleno suave de cebolla y queso.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Muy elegida</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20empanadas%20de%20Cebolla." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Roquefort</h4>
+                            <span class="badge popular">INTENSO</span>
+                        </div>
+                        <p class="card-desc">Deliciosa combinación con queso azul.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Sabor fuerte</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20empanadas%20de%20Roquefort." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Caprese</h4>
+                            <span class="badge tradicional">FRESCA</span>
+                        </div>
+                        <p class="card-desc">Muzzarella, tomate fresco y albahaca.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Liviana</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20empanadas%20Caprese." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría Tartas (Oculta al iniciar) -->
+<div class="menu-content-category" id="tartas">
+    <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Jamón y Queso</h4>
+                            <span class="badge clasica">CLÁSICA</span>
+                        </div>
+                        <p class="card-desc">Masa casera, abundante relleno de jamón y muzza.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Masa casera</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Tarta%20de%20Jam%C3%B3n%20y%20Queso." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Jamón, Queso, Tomate y Huevo</h4>
+                            <span class="badge popular">COMPLETA</span>
+                        </div>
+                        <p class="card-desc">Tarta completa con rodajas de tomate y huevo.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Súper llenadora</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Tarta%20de%20Jam%C3%B3n,%20Queso,%20Tomate%20y%20Huevo." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Cebolla</h4>
+                            <span class="badge clasica">SUAVE</span>
+                        </div>
+                        <p class="card-desc">Relleno dorado y suave de cebolla y queso.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Deliciosa</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Tarta%20de%20Cebolla." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Palmito</h4>
+                            <span class="badge tradicional">ESPECIAL</span>
+                        </div>
+                        <p class="card-desc">Exquisita tarta con palmitos y salsa golf.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Diferente</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Tarta%20de%20Palmito." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <div class="card-top">
+                            <h4>Roquefort</h4>
+                            <span class="badge popular">INTENSO</span>
+                        </div>
+                        <p class="card-desc">Intenso sabor a queso azul en masa casera.</p>
+                        <div class="card-footer">
+                            <span class="card-note">Queso azul</span>
+                            <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20pedir%20una%20Tarta%20de%20Roquefort." target="_blank" class="btn-card-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN UBICACIÓN Y PEDIDOS -->
+    <section class="contacto-section" id="contacto">
+        <div class="contacto-container">
+            <span class="contacto-badge">DELIVERY Y RETIRO</span>
+            <h2 class="contacto-title">¿Cómo encontrarnos y pedir?</h2>
+            <p class="contacto-intro">
+                Atendemos exclusivamente con modalidad Delivery y Retiro por Local (no disponemos de salón para comer adentro).
+            </p>
+            <div class="contacto-grid">
+                <!-- Dirección -->
+                 <div class="contacto-card">
+                    <div class="contacto-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Dirección</h3>
+                    <p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Avenida+de+Mayo+497+Capit%C3%A1n+Sarmiento+Buenos+Aires" target="_blank" rel="noopener noreferrer">
+                            Avenida de Mayo 497, Capitán Sarmiento
+                        </a>
+                    </p>
+                    <p class="contacto-sub">(Ex Avenida Presidente Perón)</p>
+                 </div>
+
+                 <!-- Horarios -->
+                  <div class="contacto-card">
+                    <div class="contacto-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Horarios</h3>
+                    <p>De Lunes a Lunes</p>
+                    <p class="contacto-destacado">19:30 a 23:30 hs.</p>
+                 </div>
+
+                 <!-- Teléfonos -->
+                <div class="contacto-card">
+                    <div class="contacto-icon"><i class="fa-solid fa-phone"></i></div>
+                    <h3>Teléfonos</h3>
+                    <p>
+                    <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20hacer%20un%20pedido." target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> Whatsapp: 2478521979
+                    </a>    
+                    </p>
+                <p>
+                    <a href="tel:+542478481888">
+                        <i class="fa-solid fa-phone"></i> Fijo: 481888
+                        </a>
+                </p>
+        </div>
+
+        <!-- Medios de pago -->
+         <div class="contacto-card">
+            <div class="contacto-icon"><i class="fa-solid fa-wallet"></i></div>
+            <h3>Medios de Pago</h3>
+            <p>Efectivo, Transferencia y Mercado Pago.</p>
+            <p class="contacto-sub">Consultar al pedir</p>
+         </div>
+         </div>
+
+         <a href="https://wa.me/5492478521979?text=Hola!%20Quiero%20hacer%20un%20pedido." target="_blank" rel="noopener noreferrer" class="contacto-btn">
+            <i class="fa-brands fa-whatsapp"></i> ¡Pedí por Whatsapp!
+         </a>
+        </div>
+    </section>    
+
+<!-- Archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>         
+</html>
