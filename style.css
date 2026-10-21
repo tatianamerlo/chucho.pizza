@@ -1,6 +1,35 @@
 body {
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
+/* 1. Estilo para que la imagen dentro de la card quede perfecta */
+.card-menu img, 
+.menu-grid img { /* Ajustá el selector según la clase de tus tarjetas */
+    width: 100%;             /* Ocupa el 100% del ancho de la tarjeta */
+    height: 180px;           /* Altura fija para que todas las fotos sean parejas */
+    object-fit: cover;       /* Recorta la imagen prolijamente sin deformarla */
+    border-top-left-radius: 12px;  /* Redondea las esquinas superiores */
+    border-top-right-radius: 12px;
+    display: block;
+}
+
+/* 2. PUNTO 5: Sombra y profundidad para las tarjetas del menú */
+.card-menu, 
+.menu-card { /* Usá el nombre de la clase que rodea a cada tarjeta */
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;         /* Evita que la imagen sobresalga de los bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave para que no se vean planas */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el mouse o tocar en el celular */
+.card-menu:hover,
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* La sombra se intensifica sutilmente */
+}
+
 /* Aseguramos que el header mantenga su altura original */
 header {
     background-color: #5983bd;
@@ -15,7 +44,7 @@ header {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,14 +73,13 @@ header {
     font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 .logo-box span span {
     color: white;
     font-size: 50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 /* Redes sociales a la derecha */
@@ -73,28 +101,8 @@ header {
 
 .texto-borde {
   color: white;                 
-  -webkit-text-stroke: 2px rgb(48, 47, 82); 
 }
 
-/* Botón flotante de WhatsApp */
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background-color: #25D366;
-    color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 9999;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
 
 .whatsapp-float:hover {
     transform: scale(1.1);
@@ -141,7 +149,7 @@ header {
     line-height: 1.8;
     text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     text-transform: uppercase;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero p {
@@ -150,7 +158,7 @@ header {
     max-width: 600px;
     text-shadow: 0 1px 2px rgba(0,0,0,0.4);
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.8;
 }
 
@@ -256,6 +264,7 @@ header {
     color: #f0a80c;
     text-transform: uppercase;
     text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .promo-info p {
@@ -465,19 +474,22 @@ header {
 }
 
 .card-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;   /* imagen arriba, nombre abajo */
+  gap: 12px;
 }
 
 .card-top h4 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--navy);
-    margin: 0;
-    line-height: 1.3;
+  margin: 0;
+  text-align: left;         /* poné center si lo querés centrado */
+}
+
+.card-top img {
+  width: 100%;              /* ocupa todo el ancho de la tarjeta */
+  height: 200px;
+  object-fit: cover;        /* no se deforma */
+  border-radius: 12px;
+  display: block;
 }
 
 .card-desc {
@@ -570,7 +582,7 @@ header {
 .contacto-badge {
     display: inline-block;
     background: #1b2a49;
-    color: #ffc72c;
+    color: #f7f306;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -624,7 +636,7 @@ header {
     align-items: center;
     justify-content: center;
     background: #1b2a49;
-    color: #ffc72c;
+    color: #f1b307;
     font-size: 1.5rem;
     border-radius: 50%;
 }
@@ -634,6 +646,7 @@ header {
     font-weight: 700;
     color: #1b2a49;
     margin: 0 0 12px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contacto-card p {
